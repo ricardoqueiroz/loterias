@@ -1,0 +1,917 @@
+* { 
+	margin:0px;
+	padding:0px;
+}
+html, body { 
+	height:100%;
+}
+body { 
+	background:#ffffff;
+	' background-image:url("http://testesuasorte.com/img/bgbt1.gif"); 
+	' background-repeat:no-repeat;
+	' background-attachment:fixed;
+	' background-position:center;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:100%; 
+	line-height:1.125em;
+	color:#161616;
+}
+
+img {
+	border:0; 
+	vertical-align:top; 
+	text-align:left;
+}
+object { 
+	vertical-align:top; 
+	outline:none;
+}
+a {
+	color: #366fb3;
+	text-decoration: none;
+	cursor: pointer;
+}
+ul {
+	padding-left: 0px;
+	margin-bottom: 20px;
+	list-style-type: none;
+	list-style-position: outside;
+	list-style-image: none;
+}
+.clear { 
+	clear:both;
+}
+
+.alignright { 
+	text-align:right;
+}
+.aligncenter { 
+	text-align:center;
+}
+
+/*==== GLOBAL =====*/
+#topBar {
+	position: absolute;
+	top:0;
+	left:0;
+	height: 30px;
+	width:100%;
+	padding: 6px 0px 0px 10px;
+	background-color: tranparent;
+}
+#topBar .search-box-blur .search-box {
+	color: #999;
+}
+.logo {
+	float: left;
+}
+.contentWrapper {
+	height: 28px;
+	width:800px;
+	position: relative;
+	left: 50%;
+	margin-left: -410;
+	padding:10px 0px 0px 0px;
+}
+#top {
+	padding: 0px 0px 0px 0px;
+	margin-right: 20px;
+	float: right;
+	list-style-type: none;
+	list-style-position: outside;
+	list-style-image: none;
+}
+#top  li {
+	margin-left: 7px;
+	display: inline;
+}
+#top li a, #top li a:visited {
+	color: #336699;
+	line-height: 2;
+	font-size: 12px;
+	font-weight: bold;
+}
+/* ------------------------------- */
+/* Área Principal                  */
+/* ------------------------------- */
+#principal {
+	position: relative;
+	width:820px;
+	top: 40px;
+	left: 50%;
+	margin-left: -410;
+	padding:10px 0px 20px 0px;
+	display:block;
+}
+#div_loading {
+	z-index: 200;
+	visibility: hidden;
+	position:absolute;
+	top:0px;
+	left:0px;
+	width: 100%;
+	height:100%;
+	display: block;
+	padding:0px;
+	margin:0px;
+	border: #1a5266 1px solid; 
+	background: #000;
+	filter: alpha(opacity=75);
+	color: #ffffff;
+	font-weight: bold;
+	opacity: .75
+}
+/* ------------------------------- */
+/* Cabeçalho                       */
+/* ------------------------------- */
+#cabecalho {
+	width:800px;
+	height:150px;
+	border: 1px gray solid;
+	background-color:#336699;
+}
+#cabecalho .cab_left {
+	position: absolute;
+	left: 150px;
+	float:left;
+}
+#cabecalho .cab_left .titlConcurso {
+	position: absolute;
+	top: 10px;
+	color: white;
+	font-weight:bold;
+	font-family: 'Arial black', Arial, Helvetica, sans-serif;
+	font-size:30px;
+	line-height:1.2em;
+	text-align:left;
+	text-transform:uppercase;
+}
+#cabecalho .cab_left .titlResultado {
+	width: 450px;
+	position: absolute;
+	top: 45px;
+	color: white;
+	font-weight:bold;
+	font-family: 'Arial black', Arial, Helvetica, sans-serif;
+	font-size:20px;
+	line-height:1.2em;
+	text-align:left;
+	text-transform:uppercase;
+}
+#cabecalho .cab_left .titlDataSort {
+	width: 450px;
+	position: absolute;
+	top: 75px;
+	color: black;
+	font-weight:bold;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:15px;
+	line-height:1.2em;
+	text-align:left;
+	text-transform:uppercase;
+
+}
+#cabecalho .cab_left .tabela_jogo {
+	position: absolute;
+	top: 90px;
+	color: #006600;
+	font-weight:bold;
+	font-family: 'Arial black', Arial, Helvetica, sans-serif;
+	line-height:1.2em;
+	text-align:center;
+}
+#cabecalho .cab_left .tabela_jogo .dsms {
+	font-size:35px;
+	padding: 15px 20px 0px 0px;
+}
+#cabecalho .cab_left .tabela_jogo .dslf {
+	font-size:15px;
+	padding: 25px 20px 0px 0px;
+}
+/*
+#cabecalho .cab_left .tabela_jogo {
+	padding-right:20px;
+}
+*/
+#cabecalho .cab_right {
+	position: absolute;
+	top: 10px;
+	left: 580px;
+	width: 220px;
+	float:right;
+}
+#acumulou {
+	position: relative;
+	top: 10px;
+	width: 220px;
+	height: 30px;
+	background-color:red;
+}
+#txt_acum {
+	display:block;
+	padding:5px 0px 0px 0px;
+	color: yellow;
+	font-weight:bold;
+	font-family: 'Arial black', Arial, Helvetica, sans-serif;
+	font-size:20px;
+	line-height:1.2em;
+	text-align:center;
+	text-transform:uppercase;
+}
+#vlr_acum {
+	display:block;
+	padding:0px 0px 5px 0px;
+	color: white;
+	font-weight:bold;
+	font-family: 'Arial black', Arial, Helvetica, sans-serif;
+	font-size:13px;
+	line-height:1.2em;
+	text-align:center;
+	text-transform:uppercase;
+}
+#cabecalho .premiados {
+	position: relative;
+	top: 15px;
+	width:100%;
+	color: black;
+	font-weight:bold;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:12px;
+	line-height:1.2em;
+}
+#cabecalho .premiados th {
+	color: white;
+	font-size:12px;
+	font-weight: bold;
+	text-align: center;
+	text-transform:uppercase;
+	padding:5px 0px 5px 0px;
+	background: #04a700;
+}
+#cabecalho .premiados .t1 {
+	padding:5px 0px 2px 0px;
+	border-bottom: 1px solid gray;
+}
+#cabecalho .premiados .t2 {
+	padding:2px 0px 2px 0px;
+	border-bottom: 1px solid gray;
+}
+/* ------------------------------- */
+/* Área Jogo                       */
+/* ------------------------------- */
+#leftarea {
+	width: 380px;
+	margin:10px 0px 0px 10px;
+	text-align:left;
+	float: left;
+}
+#leftarea .subtitulo1 {
+	display:block;
+	clear: both;
+	width: 370px;
+	color: #006600;
+	font-size:11px;
+	font-weight: bold;
+	text-align: center;
+}
+.logomega {
+	align:top;
+	width:370;
+	height:75;
+	clear: both;
+}
+#cartao {
+	padding:5px 5px 5px 5px;
+	border: gray 1px solid;
+}
+/* ------------------------------- */
+/* Tabela Comparação               */
+/* ------------------------------- */
+#tbresult {
+	position: absolute;
+	left: 410px;
+	top: 214px;
+	width:100%;
+	background-color:#ffffff;
+	' margin-top: 10px 0px 0px 0;
+	' float:left;
+}
+.acdiv {
+	width:400px;
+	padding:3px 3px 3px 3px;
+	margin:5px 0px 5px 0px;
+	color: white;
+	font-size:15px;
+	font-weight:bold;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	line-height:1.2em;
+	text-align:left;
+	text-transform:uppercase;
+	border:1px solid #98bf21;
+	background-image:url("http://testesuasorte.com/img/bgbt1.gif");
+	background-repeat:repeat-x;
+	clear:both;
+	cursor: pointer; cursor: hand;
+}
+.acbtn {
+	margin-right: 10px;
+	align:left;
+	cursor: pointer; cursor: hand;
+}
+.actab {
+	width:400px;
+	padding:3px 0px 3px 0px;
+	margin:0px 0px 10px 0px;
+	font-weight:bold;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	text-align:center;
+	border-collapse:collapse;
+	float:left;
+	clear:both;
+}
+.actab #conc {
+	width:90px;
+}
+.actab th a {
+	color: white;
+	font-size:12px;
+	font-weight: bold;
+	text-align: center;
+	text-decoration:none;
+	padding:5px 0px 5px 0px;
+	background: #04a700;
+}
+.actab th a:hover {
+	color: yellow;
+}
+.actab th .sortarrow {
+	padding:5px 0px 5px 5px;
+}
+.actab th img {
+	vertical-align:middle;
+}
+.actab td.conc {
+	font-size:15px;
+	border:1px solid #98bf21;
+	padding:3px 7px 2px 7px;
+}
+.actab td.ms {
+	font-size:15px;
+	border:1px solid #98bf21;
+	padding:3px 7px 2px 7px;
+}
+.actab td.lf {
+	font-size:14px;
+	border:1px solid #98bf21;
+	padding:3px 3px 2px 3px;
+}
+.actab td.ac {
+	color:#fff;
+	background-color:#A7C942;
+}
+.actab td.na {
+	color:gray;
+}
+.actab th {
+	color: white;
+	font-size:12px;
+	font-weight: bold;
+	text-align: center;
+	padding:5px 0px 5px 0px;
+	background: #04a700;
+	cursor: pointer; cursor: hand;
+}
+/* ------------------------------- */
+/* Área botões                     */
+/* ------------------------------- */
+#controls {
+	width:100%;
+	margin: 10px 10px 10px 10px;
+	display:block;
+	text-align:left;
+}
+#controls .ctlButton {
+	width: 147px;
+	height: 24px;
+	margin-right: 10px;
+	font-weight:bold;
+}
+
+#controls .actButton {
+	width: 250px;
+	height: 24px;
+	margin-right: 10px;
+	font-weight:bold;
+}
+
+#centerarea {
+	padding:10px 10px 10px 10px;
+	width:80px;
+	float: left;
+	text-align: center;
+}
+#centerarea .bt {
+	width:80px;
+	margin:0px 0px 10px 0px;
+	background:#5B74A8;
+	background:-moz-linear-gradient(top,#5B74A8 0%,#5B74A8 100%);
+	background:-webkit-gradient(linear,left top,left bottom,color-stop(0%,#5B74A8),color-stop(100%,#5B74A8));
+	background:-webkit-linear-gradient(top,#5B74A8 0%,#5B74A8 100%);
+	background:-o-linear-gradient(top,#5B74A8 0%,#5B74A8 100%);
+	background:-ms-linear-gradient(top,#5B74A8 0%,#5B74A8 100%);
+	background:linear-gradient(top,#5B74A8 0%,#5B74A8 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#5B74A8',endColorstr='#5B74A8',GradientType=0);
+	padding:2px 6px 0px 0px;
+	color:#fff;
+	font-family:'Helvetica',sans-serif;
+	font-size:11px;
+	border-radius:0;
+	-moz-border-radius:0;
+	-webkit-border-radius:0;
+	border:1px solid #1A356E
+}
+#centerarea .bt:hover {
+
+	background-color:#24d900;
+
+}
+#centerarea .bt:active {
+
+	position:relative;
+
+	top:1px;
+
+}
+/* ------------------------------- */
+/* Área informações                */
+/* ------------------------------- */
+#rightarea {
+	padding-top: 10px;
+	margin-right:10px;
+	float: right;
+	text-align:right;
+}
+#info {
+	position: absolute;
+	left: 410px;
+	top: 214px;
+	padding:5px 5px 5px 5px;
+	border: gray 1px solid;
+	background: #F0E68C;
+}
+#infheader {
+	width: 310px;
+	height:25px;
+	background-color:#3366cc;
+	margin:1px 1px 1px 1px;
+	text-align:center;
+	cursor:move;
+}
+#inftitle {
+	float: left;
+	width: 280px;
+	color: white;
+	font-family:'Helvetica',sans-serif;
+	font-size: 15px;
+	font-weight: bold;
+	margin: 3px 0px 3px 0px;
+}
+#infclose {
+	width: 15px;
+	height: 15px;
+	cursor:hand;
+	float: right;
+	margin: 5px 5px 5px 0px;
+}
+#info .subtitulo1 {
+	display:block;
+	clear: both;
+	width: 300px;
+	color: #006600;
+	font-size:11px;
+	font-weight: bold;
+	text-align: center;
+}
+/* ------------------------------- */
+/* Apostadores                     */
+/* ------------------------------- */
+#bolao {
+	position: absolute;
+	left: 410px;
+	top: 214px;
+	padding:5px 2px 2px 2px;
+	border: gray 1px solid;
+	background-color: #F0E68C;
+	width: 346px;
+}
+#apsheader  {
+	width: 330px;
+	height:25px;
+	background-color:#3366cc;
+	margin:1px 1px 1px 1px;
+	text-align:center;
+	cursor:move;
+}
+.apsinput table {
+	border:0px; 
+	border-collapse:collapse;
+	width:340px;
+}
+.apsinput table .l {
+	width:50%;
+	font-size:12;
+	font-weight:bold;
+	text-align:left;
+	padding:3px 0px 3px 5px;
+	border-bottom:#000000 1px solid;
+}
+.apsinput table .r {
+	width:50%;
+	font-size:12;
+	font-weight:bold;
+	text-align:right;
+	padding:3px 10px 3px 0px;
+	border-bottom:#000000 1px solid;
+}
+.apsinput table button  {
+	width: 147px;
+	height: 24px;
+	font-weight:bold;
+}
+.apsinput table select  {
+	width:40px;
+}
+#tbcotascroll {
+	width: 330px;
+	height: 400px;
+	overflow:scroll;
+}
+#tbcotas {
+	width: 310px;
+	margin:3px 0px 0px 0px;
+	background: white;
+	border: 1px solid gray;
+	overflow:scroll;
+}
+#tbcotas tr {
+	cursor:pointer;
+}
+#tbcotas th {
+	color: white;
+	font-size:11px;
+	font-weight: bold;
+	text-align: center;
+	padding:5px 0px 5px 0px;
+	background: #04a700;
+}
+#tbcotas .nr {
+	width:30px;
+	font-size:11px;
+	text-align: center;
+	padding:0px 3px 0px 3px;
+	border-bottom: 1px solid gray;
+}
+#tbcotas .nm {
+	width:150px;
+	font-size:11px;
+	text-align: left;
+	padding:0px 3px 0px 3px;
+	border-bottom: 1px solid gray;
+}
+#tbcotas .ct {
+	width:40px;
+	font-size:11px;
+	color: black;
+	text-align: center;
+	padding:0px 3px 0px 3px;
+	border-bottom: 1px solid gray;
+}
+#tbcotas .vl {
+	width:90px;
+	color: black;
+	font-size:11px;
+	text-align: right;
+	padding:0px 3px 0px 3px;
+	border-bottom: 1px solid gray;
+}
+#tbcotas .nb {
+	border-bottom: 0px;
+}
+/* ------------------------------- */
+/* Mensagens                       */
+/* ------------------------------- */
+#msg {
+	width: 400px;
+	padding:5px 5px 5px 5px;
+	border: gray 1px solid;
+	background: #ffffff;
+}
+#msg .area {
+	padding:15px 15px 15px 15px;
+}
+#msg #txt {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:100%; 
+	line-height:2.125em;
+	color:#161616;
+	text-align:center;
+}
+#msgheader {
+	width: 395px;
+	height:25px;
+	background-color:transparent;
+	margin:1px 1px 1px 1px;
+	padding-bottom: 10px;
+	text-align:center;
+	cursor:move;
+	border-bottom: #888888 1px dashed;
+}
+#msgtitle {
+	float: left;
+	width: 300px;
+	color: gray;
+	font-family:'Helvetica',sans-serif;
+	font-size: 15px;
+	font-weight: bold;
+	margin: 3px 0px 3px 0px;
+}
+#msgclose {
+	cursor:hand;
+	float: right;
+	margin: 5px 5px 5px 0px;
+}
+
+/* ------------------------------- */
+/* Quadro 1  (Valores e Quantid.)  */
+/* ------------------------------- */
+#quadro1 {
+	width: 310px;
+	margin:3px 0px 0px 0px;
+	background: white;
+	border: 1px solid gray;
+}
+#quadro1 th {
+	color: white;
+	font-size:12px;
+	font-weight: bold;
+	text-align: center;
+	padding:0px 5px 0px 5px;
+	background: #04a700;
+}
+#quadro1 .titulo {
+	width:160px;
+	font-size:12px;
+	color: #black;
+	font-weight: bold;
+	text-align: left;
+	padding:0px 5px 0px 5px;
+	border-bottom: 1px solid gray;
+}
+#quadro1 .valor {
+	color: black;
+	font-size:12px;
+	font-weight: none;
+	text-align: left;
+	padding:0px 5px 0px 5px;
+	border-bottom: 1px solid gray;
+}
+#quadro1 .nb {
+	border-bottom: 0px;
+}
+/* ------------------------------- */
+/* Quadro 2 (Probab. e Qtd.Premios)*/
+/* ------------------------------- */
+#quadro2 {
+	width: 300px;
+	border: 1px solid gray;
+	background: white;
+}
+#quadro2 td {
+	border-bottom: 1px solid gray;
+}
+#quadro2 th {
+	color: white;
+	font-size:12px;
+	font-weight: bold;
+	text-align: center;
+	padding:0px 5px 0px 5px;
+	background: #04a700;
+}
+#quadro2 .titulo {
+	width:75px;
+	font-size:12px;
+	color: #black;
+	font-weight: bold;
+	text-align: center;
+	padding:0px 5px 0px 5px;
+}
+#quadro2 .valor {
+	width:75px;
+	color: black;
+	font-size:11px;
+	font-weight: none;
+	text-align: center;
+	padding:0px 5px 0px 5px;
+}
+#quadro2 .nb {
+	border-bottom: 0px;
+}
+/* ------------------------------- */
+/* Quadro 5 (Próximos Sorteios)    */
+/* ------------------------------- */
+#quadro5 {
+	width: 300px;
+	background: white;
+	border: 1px solid gray;
+}
+#quadro5 td {
+	border-bottom: 1px solid gray;
+}
+#quadro5 th {
+	color: white;
+	font-size:12px;
+	font-weight: bold;
+	text-align: center;
+	padding:0px 5px 0px 5px;
+	background: #04a700;
+}
+#quadro5 .ds {
+	width:75px;
+	font-size:12px;
+	color: #black;
+	font-weight: bold;
+	text-align: center;
+	padding:0px 5px 0px 5px;
+}
+#quadro5 .dt {
+	color: black;
+	font-size:11px;
+	font-weight: bold;
+	text-align: center;
+	padding:0px 5px 0px 5px;
+}
+#quadro5 .ps {
+	color: #ff0000;
+}
+#quadro5 .nb {
+	border-bottom: 0px;
+}
+/* ------------------------------- */
+/* Cartão do jogo (volante Aposta) */
+/* ------------------------------- */
+#apostas {
+	width:90%;
+	background: #F0E68C;
+}
+
+#apostas td {
+
+	border-left: 1px solid #DC143C;
+	border-right: 1px solid #DC143C;
+	height:12px;
+	vertical-align:middle;
+	background:#ffffff;
+	font-size:12px;
+	color: #DC143C;
+	font-weight: bold;
+	text-align: center;
+	padding:0px 5px 0px 5px;
+	cursor: pointer; cursor: hand;
+}
+#dezenas {	width:90%;	background: #F0E68C;}#dezenas td {	border-left: 1px solid #DC143C;	border-right: 1px solid #DC143C;	height:12px;	vertical-align:middle;	background:#ffffff;	font-size:12px;	color: #DC143C;	font-weight: bold;	text-align: center;	padding:0px 5px 0px 5px;	cursor: pointer; cursor: hand;}
+#volante {
+	width:100%;
+	background: #F0E68C;
+}
+
+#volante .td_ms {
+
+	border-left: 1px solid #DC143C;
+	border-right: 1px solid #DC143C;
+	height:12px;
+	vertical-align:middle;
+	background:#ffffff;
+	font-size:12px;
+	color: #DC143C;
+	font-weight: bold;
+	text-align: center;
+	padding:0px 5px 0px 5px;
+	cursor: pointer; cursor: hand;
+}
+
+#volante .td_lf {
+
+	border-left: 1px solid #DC143C;
+	border-right: 1px solid #DC143C;
+	height:12px;
+	vertical-align:middle;
+	background:#ffffff;
+	font-size:12px;
+	color: #DC143C;
+	font-weight: bold;
+	text-align: center;
+	padding:5px 5px 5px 5px;
+	cursor: pointer; cursor: hand;
+}
+
+.selecionado {
+
+	color:white;
+	background:gray;
+}
+
+
+/*----- forms parameters -----*/
+
+input, select, textarea { 
+	font-family:Arial, Helvetica, sans-serif; font-size:1em;
+	vertical-align:middle;
+	font-weight:bold;
+	font-size:11px;
+	line-height:17px;
+	border:1px solid #a4a4a4;
+	background:#ffffff;
+	padding:2px 2px 2px 2px;
+	margin:5px 0px 5px 2px;
+}
+
+h1 {
+	
+}
+h2 {
+	font-size:34px;
+	text-transform:uppercase;
+	line-height:1.2em;
+	letter-spacing:-1px;
+	border-bottom:2px solid #1e1e1e;
+	margin:0px -20px 20px -20px;
+	padding:0px 20px 10px 20px;
+}
+h3 {
+	font-size:34px;
+	text-transform:uppercase;
+	line-height:1.2em;
+	margin-bottom:20px;
+	letter-spacing:-1px;
+}
+h4 {
+	font-size:15px;
+	line-height:1.2em;
+	text-transform:uppercase;
+	font-weight:bold;
+	margin-bottom:18px;
+}
+	h4 a {
+		font-size:15px;
+		font-weight:bold;
+		text-decoration:none;
+	}
+	h4 a:hover {
+		background:#ff005a;
+		color:#fff;
+	}
+h5 {
+	font-size:15px;
+	color:#ff005a;
+	text-transform:uppercase;
+}
+h6 {
+	font-size:15px;
+	text-transform:uppercase;
+	margin-bottom:2px;
+}
+	h6 a {
+		text-decoration:none;
+	}
+	h6 a:hover {
+		background:#ff005a;
+		color:#fff;
+	}
+
+
+/* ------------------------------- */
+/* Rodapé                          */
+/* ------------------------------- */
+#footer {
+	position: relative;
+	z-index:-1;
+	clear:both;
+        width:820px;
+	left: 50%;
+	margin-top: 50px;
+	margin-left: -410px;
+	font-size:12px;
+	font-weight:bold;
+	text-align:center;
+	text-transform:uppercase;
+	/*padding:10px 10px 10px 18px;*/
+	padding:32px 0px 99px 0px;
+	border: #999999 1px dashed;
+	background:#ececec;
+	padding:10px 10px 10px 10px;
+}
+#footer .footerLinksSpaced a, .footerLinksSpaced a:visited {
+	color:#366fb3;
+	font-weight:bold;
+	margin: 0px 10px 0px 10px;
+}
